@@ -1,0 +1,12 @@
+.arduinosMultiples {
+    width: 600px;
+}
+.arduino {
+    width: 100%;
+}
+
+.multipleDisplay {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

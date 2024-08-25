@@ -1,0 +1,24 @@
+.list-box-protocolo {
+  width: 250px;
+}
+
+.select-ResultadosEntr {
+  padding: 30px;
+}
+
+.display-flexResultadosEntr {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30%;
+  justify-content: space-between;
+  margin-right: 30%;
+}
+.space-divEscogerResultadosEntr {
+  padding-top: 10%;
+}
+.div-closingResultadosEntr {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+}

@@ -1,0 +1,58 @@
+@media (max-width: 1130px) {
+  #comenzarAnalisisEntrenamiento {
+    margin-right: 300%;
+  }
+}
+
+@media (max-width: 900px) {
+  #comenzarAnalisisEntrenamiento {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 820px) {
+  #comenzarAnalisisEntrenamiento {
+    margin-left: 0%;
+  }
+}
+
+.search {
+  position: relative;
+  border-radius: 2px;
+  display: flex;
+  margin-left: 10%;
+  /* backgroundColor: fade("grey", 0.15),
+  '&:hover': {
+    backgroundColor: fade("white", 0.25),
+  },
+  marginRight: theme.spacing(2),
+  marginLeft: 0,
+  width: '100%',
+  [theme.breakpoints.up('sm')]: {
+     marginLeft: theme.spacing(3),
+    width: 'auto',
+  }, */
+}
+.searchIcon {
+  /* width: theme.spacing(7),
+  height: '100%',
+  position: 'absolute',
+  pointerEvents: 'none',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center', */
+}
+.inputRoot {
+  color: inherit;
+  margin-left: 10px;
+}
+.inputInput {
+  padding: (1, 1, 1, 7);
+  width: 100%;
+}
+
+.highlight {
+  color: rgb(7, 185, 255);
+  background-color: rgb(226, 246, 255);
+  font-weight: bold;
+}

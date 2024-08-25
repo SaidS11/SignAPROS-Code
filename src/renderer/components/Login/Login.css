@@ -1,0 +1,181 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: #3498db;
+  height: 100%;
+}
+.general-style {
+  position: relative;
+  color: white;
+  height: 100vh;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-styled {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.3rem;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: all ease-in 0.1s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.button-styled:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.li-styled {
+  list-style: none;
+}
+.h2-styled {
+  color: black;
+}
+.a-styled {
+  text-decoration: none;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+}
+
+.a-styled:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.Hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.login {
+  margin: 20px auto;
+  width: 300px;
+}
+
+.login-screen {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.app-title {
+  text-align: center;
+  color: #777;
+}
+
+.login-form {
+  text-align: center;
+}
+.control-group {
+  margin-bottom: 10px;
+}
+
+.input-styled {
+  text-align: center;
+  background-color: #ecf0f1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border 0.5s;
+}
+
+.input-styled:focus {
+  border: 2px solid #3498db;
+  box-shadow: none;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.login-link:hover {
+  color: blue;
+}
+
+.credentials-link {
+  font-size: 15px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+  cursor: pointer;
+
+}
+.credentials-link:hover {
+  color: blue;
+}
+
+.contenido-enmedio {
+  display: inline-flex;
+  float: left;
+}
+#my-h1login {
+  font-family: Helvetica;
+  color: black;
+  margin: 10px;
+}
+#item1 {
+  float: left;
+}
+#item2 {
+  float: left;
+}
+
+.reportes {
+  color: red;
+}
+
+#boton_ingresar {
+  margin-top: 5px;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  border-radius: 10px;
+}

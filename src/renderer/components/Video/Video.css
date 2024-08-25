@@ -1,0 +1,76 @@
+.list-box-protocolo {
+  width: 250px;
+}
+
+.select-VideoDemo {
+  padding: 30px;
+}
+
+.display-flexVideoDemo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.space-divEscogerVideoDemo {
+  padding-top: 10%;
+}
+
+.countdown:before {
+  content: '321';
+
+  font-family: monospace;
+  display: inline-block;
+  width: 1ch;
+  overflow: hidden;
+
+  -webkit-animation: countdowns 3s steps(3) infinite;
+  -moz-animation: countdowns 3s steps(3) infinite;
+  -ms-animation: countdowns 3s steps(3) infinite;
+  -o-animation: countdowns 3s steps(3) infinite;
+  animation: countdowns 3s steps(3) infinite;
+}
+
+@-webkit-keyframes countdowns {
+  0% {
+    text-indent: 0;
+  }
+  100% {
+    text-indent: -3ch;
+  }
+}
+@-moz-keyframes countdowns {
+  0% {
+    text-indent: 0;
+  }
+  100% {
+    text-indent: -3ch;
+  }
+}
+@-ms-keyframes countdowns {
+  0% {
+    text-indent: 0;
+  }
+  100% {
+    text-indent: -3ch;
+  }
+}
+@-o-keyframes countdowns {
+  0% {
+    text-indent: 0;
+  }
+  100% {
+    text-indent: -3ch;
+  }
+}
+@keyframes countdowns {
+  0% {
+    text-indent: 0;
+  }
+  100% {
+    text-indent: -3ch;
+  }
+}

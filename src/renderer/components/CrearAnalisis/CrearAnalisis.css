@@ -1,0 +1,60 @@
+.display-flex {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 3%;
+}
+
+/*@media (max-width: 1030px) {
+  .analisis-form {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .analisis-form {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 820px) {
+  .analisis-form {
+    margin-left: 0%;
+  }
+}*/
+
+.first-input {
+  margin-left: 18%;
+  width: 60%;
+}
+
+.second-input {
+  margin-left: 12%;
+  width: 60%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.fourth-input-modelo {
+  margin-left: 45%;
+}
+
+.btnBlueAnalisis {
+  border: 1px solid #ccc;
+  background-color: #4372ca;
+  color: white;
+  min-width: initial;
+  height: 30px;
+  border-radius: 0;
+  padding: 0px 10px;
+  min-height: initial;
+  line-height: initial;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  text-transform: unset;
+}
+
+.sensores-crear-analisis {
+  margin-left: 280px;
+  width: auto;
+}

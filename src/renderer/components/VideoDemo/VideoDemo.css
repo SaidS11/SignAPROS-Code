@@ -1,0 +1,33 @@
+.list-box-protocolo {
+  width: 250px;
+}
+
+.select-VideoDemo {
+  padding: 30px;
+}
+
+.display-flexVideoDemo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.space-divEscogerVideoDemo {
+  padding-top: 10%;
+}
+
+.videoInsert {
+  /* position: absolute;  */
+  /* right: 0;  */
+  /* bottom: 0; */
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  /* z-index: -100; */
+  background-size: cover;
+  overflow: hidden;
+}

@@ -1,0 +1,63 @@
+.nav-bar-background {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.submenu .dropdown-item,
+.submenu .dropdown-item a {
+  color: black;
+}
+
+.test a {
+  color: black;
+  /* background-color: grey; */
+}
+
+.test a:hover {
+  color: black;
+}
+
+.test a:focus {
+  color: black;
+}
+
+.test a:active {
+  color: black;
+}
+
+#mi-navbar .navbar-nav .nav-link.active,
+#mi-navbar .navbar-nav .show > .nav-link {
+    color: black;
+}
+
+#mi-navbar .test .navbar-nav .nav-link.active,
+#mi-navbar .test .navbar-nav .show > .nav-link {
+    color: black !important;
+}
+
+#mi-navbar .navbar-nav .nav-link.active,
+#mi-navbar .navbar-nav .show > .nav-link {
+    color: black !important;
+}
+
+
+#mi-navbar .test .navbar-nav .nav-link.active,
+#mi-navbar .test .navbar-nav .show > .nav-link {
+    color: black !important;
+}
+
+#mi-navbar .test .navbar-nav .nav-link.active span {
+    color: black !important;
+}

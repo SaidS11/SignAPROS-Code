@@ -1,0 +1,19 @@
+.display-flex-analisis {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.more-margin-right {
+  margin-left: 10px;
+  height: 30px;
+  margin-top: 2px;
+}
+
+#table {
+  height: 800px;
+}
+
+.div-table {
+  height: 1000px;
+}

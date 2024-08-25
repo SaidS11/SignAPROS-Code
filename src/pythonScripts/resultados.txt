@@ -1,0 +1,1 @@
+The test_size = 1 should be greater or equal to the number of classes = 2

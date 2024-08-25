@@ -1,0 +1,48 @@
+('D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+ 'Modular\\electron-app\\src\\api\\build\\test\\test.pkg',
+ {'BINARY': 1,
+  'DATA': 1,
+  'EXECUTABLE': 1,
+  'EXTENSION': 1,
+  'PYMODULE': 1,
+  'PYSOURCE': 1,
+  'PYZ': 0,
+  'SPLASH': 1},
+ [('PYZ-00.pyz',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\build\\test\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\build\\test\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\build\\test\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\build\\test\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\build\\test\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\build\\test\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'c:\\users\\said\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('test',
+   'D:\\DocumentosLap\\Modular\\App de Escritorio\\Electron '
+   'Modular\\electron-app\\src\\api\\test.py',
+   'PYSOURCE')],
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

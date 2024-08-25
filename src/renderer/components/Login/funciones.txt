@@ -1,0 +1,234 @@
+  async function insertarElementoMongoFront() {
+    // appDispatch(setIsLoading(true));
+    const document = {
+      name: 'Ernesto Peña',
+      age: 39,
+      hobbies: ['reading', 'running', 'cooking'],
+    };
+
+    const document2 = {
+      name: 'Ernesto Peña',
+      protocol: 'PieDiabetico2en2',
+      signals: {
+        signal1: [
+          { x: 1, y: 2 },
+          { x: 2, y: 4 },
+          { x: 3, y: 6 },
+          { x: 4, y: 7 },
+          { x: 5, y: 10 },
+          { x: 6, y: 12 },
+          { x: 7, y: 14 },
+          { x: 8, y: 16 },
+          { x: 9, y: 18 },
+          { x: 10, y: 20 },
+          { x: 11, y: 22 },
+          { x: 12, y: 24 },
+          { x: 13, y: 26 },
+          { x: 14, y: 28 },
+          { x: 15, y: 30 },
+          { x: 16, y: 32 },
+          { x: 17, y: 34 },
+          { x: 18, y: 36 },
+          { x: 19, y: 38 },
+          { x: 20, y: 40 },
+        ],
+        signal2: [
+          { x: 1, y: 2 },
+          { x: 2, y: 4 },
+          { x: 3, y: 6 },
+          { x: 4, y: 7 },
+          { x: 5, y: 10 },
+          { x: 6, y: 12 },
+          { x: 7, y: 14 },
+          { x: 8, y: 16 },
+          { x: 9, y: 18 },
+          { x: 10, y: 20 },
+          { x: 11, y: 22 },
+          { x: 12, y: 24 },
+          { x: 13, y: 26 },
+          { x: 14, y: 28 },
+          { x: 15, y: 30 },
+          { x: 16, y: 32 },
+          { x: 17, y: 34 },
+          { x: 18, y: 36 },
+          { x: 19, y: 38 },
+          { x: 20, y: 40 },
+        ],
+        signal3: [
+          { x: 1, y: 2 },
+          { x: 2, y: 4 },
+          { x: 3, y: 6 },
+          { x: 4, y: 7 },
+          { x: 5, y: 10 },
+          { x: 6, y: 12 },
+          { x: 7, y: 14 },
+          { x: 8, y: 16 },
+          { x: 9, y: 18 },
+          { x: 10, y: 20 },
+          { x: 11, y: 22 },
+          { x: 12, y: 24 },
+          { x: 13, y: 26 },
+          { x: 14, y: 28 },
+          { x: 15, y: 30 },
+          { x: 16, y: 32 },
+          { x: 17, y: 34 },
+          { x: 18, y: 36 },
+          { x: 19, y: 38 },
+          { x: 20, y: 40 },
+        ],
+        signal4: [
+          { x: 1, y: 2 },
+          { x: 2, y: 4 },
+          { x: 3, y: 6 },
+          { x: 4, y: 7 },
+          { x: 5, y: 10 },
+          { x: 6, y: 12 },
+          { x: 7, y: 14 },
+          { x: 8, y: 16 },
+          { x: 9, y: 18 },
+          { x: 10, y: 20 },
+          { x: 11, y: 22 },
+          { x: 12, y: 24 },
+          { x: 13, y: 26 },
+          { x: 14, y: 28 },
+          { x: 15, y: 30 },
+          { x: 16, y: 32 },
+          { x: 17, y: 34 },
+          { x: 18, y: 36 },
+          { x: 19, y: 38 },
+          { x: 20, y: 40 },
+        ],
+        signal5: [
+          { x: 1, y: 2 },
+          { x: 2, y: 4 },
+          { x: 3, y: 6 },
+          { x: 4, y: 7 },
+          { x: 5, y: 10 },
+          { x: 6, y: 12 },
+          { x: 7, y: 14 },
+          { x: 8, y: 16 },
+          { x: 9, y: 18 },
+          { x: 10, y: 20 },
+          { x: 11, y: 22 },
+          { x: 12, y: 24 },
+          { x: 13, y: 26 },
+          { x: 14, y: 28 },
+          { x: 15, y: 30 },
+          { x: 16, y: 32 },
+          { x: 17, y: 34 },
+          { x: 18, y: 36 },
+          { x: 19, y: 38 },
+          { x: 20, y: 40 },
+        ],
+      },
+    };
+
+    const document3 = {
+      name: 'Ernesto Peña',
+      protocol: 'ventanasYCaracteristicas',
+      caracteristicas: [
+          { x: 1, y: 3 },
+          { x: 2, y: 6 },
+          { x: 3, y: 9 },
+          { x: 4, y: 12 },
+          { x: 5, y: 15 },
+          { x: 6, y: 18 },
+          { x: 7, y: 21 },
+          { x: 8, y: 24 },
+          { x: 9, y: 27 },
+          { x: 10, y: 30 },
+          { x: 11, y: 33 },
+          { x: 12, y: 36 },
+          { x: 13, y: 39 },
+          { x: 14, y: 42 },
+          { x: 15, y: 45 },
+          { x: 16, y: 48 },
+          { x: 17, y: 51 },
+          { x: 18, y: 54 },
+          { x: 19, y: 57 },
+          { x: 20, y: 60 },
+        ],
+      ventanas: [
+          { x: 1, y: 3 },
+          { x: 2, y: 6 },
+          { x: 3, y: 9 },
+          { x: 4, y: 12 },
+          { x: 5, y: 15 },
+          { x: 6, y: 18 },
+          { x: 7, y: 21 },
+          { x: 8, y: 24 },
+          { x: 9, y: 27 },
+          { x: 10, y: 30 },
+          { x: 11, y: 33 },
+          { x: 12, y: 36 },
+          { x: 13, y: 39 },
+          { x: 14, y: 42 },
+          { x: 15, y: 45 },
+          { x: 16, y: 48 },
+          { x: 17, y: 51 },
+          { x: 18, y: 54 },
+          { x: 19, y: 57 },
+          { x: 20, y: 60 },
+        ],
+      },
+    };
+    // const cadena = 'hola';
+    const jsonDocument = JSON.stringify(document3);
+    console.log(typeof jsonDocument);
+    window.electron.ipcRenderer.insertarElementoMongo(jsonDocument);
+  }
+  window.electron.ipcRenderer.insertarElementoM((event: any, resp: any) => {
+    if (resp > 0) {
+      toggleModal();
+    } else {
+      console.log(resp);
+    }
+  });
+
+  async function buscarElementoMongoFront() {
+    // appDispatch(setIsLoading(true));
+    const document = { name: 'John Doe', age: 35 };
+    // const cadena = 'hola';
+    const jsonDocument = JSON.stringify(document);
+    // console.log(typeof jsonDocument);
+    window.electron.ipcRenderer.buscarElementoMongo(jsonDocument);
+  }
+  window.electron.ipcRenderer.buscarElementoM((event: any, resp: any) => {
+    if (resp.length > 0) {
+      console.log(resp[0].name);
+    } else {
+      console.log('No hay nada');
+      toggleModal();
+    }
+  });
+
+  async function seleccionarTodoMongoFront() {
+    // appDispatch(setIsLoading(true));
+    // console.log(typeof jsonDocument);
+    window.electron.ipcRenderer.seleccionarTodoMongo();
+  }
+  window.electron.ipcRenderer.seleccionarTodoM((event: any, resp: any) => {
+    console.log(resp.length);
+    if (resp.length > 0) {
+      // console.log(resp.insertedCount);
+      console.log(resp);
+    } else {
+      toggleModal();
+    }
+  });
+
+  async function borrarElementoMongoFront() {
+    // appDispatch(setIsLoading(true));
+    const document = { name: 'John Doe', age: 35 };
+    // const cadena = 'hola';
+    const jsonDocument = JSON.stringify(document);
+    // console.log(typeof jsonDocument);
+    window.electron.ipcRenderer.borrarElementoMongo(jsonDocument);
+  }
+  window.electron.ipcRenderer.borrarElementoM((event: any, resp: any) => {
+    if (resp > 0) {
+      console.log(resp.insertedCount);
+    } else {
+      toggleModal();
+    }
+  });

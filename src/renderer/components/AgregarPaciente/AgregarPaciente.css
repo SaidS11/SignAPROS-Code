@@ -1,0 +1,31 @@
+.list-box-sexo {
+  width: 150px;
+}
+
+.first-inputAgregar {
+  width: 40%;
+}
+
+.second-inputAgregar {
+  margin-left: 12%;
+  width: 60%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+.third-inputAgregar {
+  margin-left: 18%;
+  width: auto;
+}
+
+.fourth-inputAgregar {
+  margin-left: 42%;
+}
+
+.display-flexAgregar {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 10%;
+  justify-content: space-between;
+  margin-right: 10%;
+}

@@ -1,0 +1,11 @@
+/* .display-flex {
+  display: flex;
+} */
+.second-item {
+  padding-left: 10px;
+}
+.display-center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

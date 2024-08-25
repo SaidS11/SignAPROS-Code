@@ -1,0 +1,129 @@
+const { SerialPort } = require('serialport'); 
+const { ReadlineParser } = require('@serialport/parser-readline')
+//const serialPort = new SerialPort({
+//path: 'COM5',
+//baudRate: 115200,
+//dataBits: 8,
+//stopBits: 1,
+//parity: 'none',
+//});
+const serialPort = new SerialPort({ path: 'COM5', baudRate: 115200 }, function (err) {
+    if (err) {return console.log('Error: ', err.message) } })
+serialPort.open(()=>{
+    console.log('abierto')
+})
+
+//const parser = serialPort.pipe(new ReadlineParser({ delimiter: '\r\n' }))//Normalizar la impresion
+
+let bufferdatos = '';
+let latidos = 0;
+let HR = 0;
+let buffer = ''
+let sum = 0;
+let sumSpo2 = 0;
+let gsrAverage = 0;
+let hr = 0;
+let volt = 0;
+let hrOhms = 0;
+let Impedancia = 0;
+let contador = 0;
+let contadorSpo2 = 0;
+let DCIR = 0;
+let ACIR = 0;
+let contadorSpo2RED = 0;
+let sumSpo2RED = 0;
+let DCRED = 0;
+let ACRED = 0;
+let Aoyagi = 0;
+let SpO2 = 0; 
+
+
+console.log ('antes')
+
+serialPort.on('data', async (chunk) => {
+ // console.log('leyendo')
+    bufferdatos = chunk;
+    const decode = decodeURIComponent(bufferdatos) 
+    const separado = decode.split(',')
+
+    if(separado.length>=5){
+        if(separado.length===6){
+            separado.pop()
+            if(separado.includes('')){
+            }
+            else {
+                console.log('SSSSSSSSSS',separado)
+                sum = 0;
+                gsrAverage = 0;
+                hr = 0;
+               /* for (let i = 0; i<10; i++){
+                    buffer = ''
+                    buffer += separado[1];
+                    console.log(buffer);
+                    sum = sum + parseInt(buffer);
+             
+                 }*/
+                 contador+=1;
+                 sum = sum + parseInt(separado[2]);
+                 if (contador>=10){
+                   // console.log('entre',sum)
+                    contador = 0;
+                    gsrAverage = sum / 10;
+                    volt = (gsrAverage*5)/1023;
+                    console.log("Gsr Average", gsrAverage);
+                    //hr = ((1024+2*gsrAverage)*1000) / (512-gsrAverage);
+                    hrOhms = ((5+2*volt)*10000) / (2.5-volt);
+                    Conductancia = 1/hrOhms;
+                    console.log("GSR Ohms", hrOhms);
+                    console.log("Impedancia",Impedancia);
+                    console.log('Acelerometro:', parseFloat(separado[1]));
+                    sum = 0;
+                 }
+
+                 contadorSpo2+=1;
+                 
+                 if (contadorSpo2>=10){
+                    sumSpo2 = sumSpo2 + parseInt(separado[3]);
+                    //console.log('entre',sumSpo2)
+                    contadorSpo2 = 0;
+                    DCIR = sumSpo2/10;
+                    ACIR = sumSpo2 - DCIR;
+                    sumSpo2 = 0;
+                 }
+
+                 contadorSpo2RED+=1;
+                 
+                 if (contadorSpo2RED>=10){
+                    sumSpo2RED = sumSpo2RED + parseInt(separado[4]);
+                    //console.log('entre',sumSpo2RED)
+                    contadorSpo2RED = 0;
+                    DCRED = sumSpo2RED/10;
+                    ACRED = sumSpo2RED - DCIR;
+                    sumSpo2RED = 0;
+                    Aoyagi = (ACRED/DCRED)/(ACIR/DCIR);
+                    SpO2 = 110 - (25*Aoyagi);
+                    console.log("SpO2",SpO2);
+                 }
+
+            }
+            
+        }
+        else {
+            //console.log('NNNNNNNNN',separado)
+        }
+    }
+    //console.log('FC',decode)
+/*    if(decode.includes('HRLM')){
+        console.log('Latidos',decode.substring(7))
+        latidos++;
+    }
+    else if(decode.includes('TCCT')) {
+        console.log('No',decode)
+        temp++;
+    }
+    else {
+        console.log('Si',decode)
+        HR++;
+    }
+    console.log('contadores',latidos,temp,HR)*/
+})
